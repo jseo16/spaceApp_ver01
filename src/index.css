@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600&display=swap');
+
+:root {
+  --ff-body: 'Inter', sans-serif;
+  --fs-body: 1.6rem;
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --font-color: #fff;
+  --bg-color: #0b0e17;
+  /* --clr-light: #ededed;
+  --clr-dark: #333;
+  --clr-accent: #EFF;
+  --ff-heading: 'Roboto', sans-serif;
+  --ff-body: 'Merriweather', serif;
+  --fw-heading: 700;
+  --fw-body: 300;
+  --fs-h1: 5rem;
+  --fs-h2: 3.25rem;
+  --fs-h3: 2.75rem;
+  --fs-h4: 1.75rem;
+  --fs-body: 1.125rem;
+  --line-height: 1.55;
+  --font-color: var(--clr-light);
+  --navbar-bg-color: var(--clr-dark);
+  --navbar-logo-color: var(--clr-accent);
+  --navbar-border: thin var(--clr-accent) solid;
+  --navbar-font-size: .8rem;
+  --header-color: var(--clr-accent);
+  --header-shadow: 2px 3px 4px rgba(200,200,0,.25);
+  --pullquote-border: 5px solid var(--clr-light);
+  --link-fg: var(--clr-dark);
+  --link-bg: var(--clr-light);
+  --link-fg-hover: var(--clr-dark);
+  --link-bg-hover: var(--clr-accent);
+  --transition: 250ms ease-out;
+  --shadow: 2px 5px 20px rgba(0, 0, 0, .2);
+  --gradient: linear-gradient(60deg, red, green, blue, yellow);
+  --button-small: .75rem;
+  --button-default: 1rem;
+  --button-large: 1.5rem; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: var(--font-color);
+  background-color: var(--bg-color);
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
