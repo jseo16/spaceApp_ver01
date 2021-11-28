@@ -1,18 +1,18 @@
 .home {
-  background-image: url(../../assets/bg-home.jpg);
+  background-image: url(./assets/bg-home.jpg);
   background-position: center center;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
 }
 
 @media (max-width: 768px) {
   .home {
-    background-image: url(../../assets/bg-home-tablet.jpg);
+    background-image: url(./assets/bg-home-tablet.jpg);
   }
 }
 
 @media (max-width: 375px) {
   .home {
-    background-image: url(../../assets/bg-home-mobile.jpg);
+    background-image: url(./assets/bg-home-mobile.jpg);
   }
 }

@@ -6,7 +6,8 @@
   --fw-light: 200;
   --fw-regular: 400;
   --fw-bold: 600;
-  --font-color: #fff;
+  --font-color--white: #fff;
+  --font-color--grey: #4a616c;
   --bg-color: #0b0e17;
   /* --clr-light: #ededed;
   --clr-dark: #333;
@@ -46,11 +47,10 @@ html {
 }
 
 body {
-  min-height: 100vh;
   margin: 0;
   font-family: var(--ff-body);
   font-size: var(--fs-body);
-  color: var(--font-color);
+  color: var(--font-color--white);
   background-color: var(--bg-color);
 
   -webkit-font-smoothing: antialiased;
