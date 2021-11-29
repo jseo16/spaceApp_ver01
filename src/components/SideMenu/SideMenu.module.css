@@ -1,0 +1,5 @@
+.nav a {
+  padding: 2rem;
+  color: var(--font-color--dark);
+  font-weight: var(--fw-bold);
+}

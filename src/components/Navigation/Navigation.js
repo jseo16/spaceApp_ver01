@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import useNav from '../../hooks/useNav';
@@ -13,6 +13,14 @@ import TopMenu from '../TopMenu/TopMenu';
 
 function Navigation() {
   const isMobileView = useNav();
+  const [show, setShow] = useState(true);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const navClickHandler = () => {
+    // setIsCollapse(!isCollapse);
+  };
 
   return (
     <header>
@@ -26,8 +34,13 @@ function Navigation() {
           <Navbar.Toggle
             aria-controls='mobileNavbar'
             className={styles.toggle}
+            onClick={handleShow}
           />
-          {isMobileView ? <SideMenu /> : <TopMenu />}
+          {isMobileView ? (
+            <SideMenu show={show} handleClose={handleClose} />
+          ) : (
+            <TopMenu />
+          )}
         </Container>
       </Navbar>
     </header>

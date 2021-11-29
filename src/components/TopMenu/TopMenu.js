@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import styles from './TopMenu.module.css';
 import Nav from 'react-bootstrap/Nav';
@@ -7,9 +7,24 @@ import Nav from 'react-bootstrap/Nav';
 function TopMenu() {
   return (
     <Nav className={styles.nav}>
-      <Link to='/'>Home</Link>
-      <Link to='spacecraft'>Spacecraft</Link>
-      <Link to='astronauts'>Astronauts</Link>
+      <NavLink
+        to='/'
+        className={({ isActive }) => (isActive ? styles.active : '')}
+      >
+        Home
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? styles.active : '')}
+        to='spacecraft'
+      >
+        Spacecraft
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => (isActive ? styles.active : '')}
+        to='astronauts'
+      >
+        Astronauts
+      </NavLink>
     </Nav>
   );
 }
