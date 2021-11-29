@@ -1,0 +1,27 @@
+/* .navbar {
+  padding: 2rem 1rem;
+} */
+header {
+  position: relative;
+  z-index: 1000;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--font-color--white);
+  text-decoration: none;
+  margin-left: 5rem;
+}
+
+/* header * {
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+} */
