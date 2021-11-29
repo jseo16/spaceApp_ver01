@@ -1,27 +1,33 @@
-import React, { useState } from 'react';
-import useNav from '../../hooks/useNav';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
+
+import useNav from '../../hooks/useNav';
+
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import Home from '../../screens/Home/Home';
-import Spacecraft from '../../screens/Spacecraft/Spacecraft';
-import Astronauts from '../../screens/Astronauts/Astronauts';
-// import styles from './Navbar.module.css';
+import styles from './Navigation.module.css';
+import { HexagonHalf } from 'react-bootstrap-icons';
+
 import SideMenu from '../SideMenu/SideMenu';
 import TopMenu from '../TopMenu/TopMenu';
 
 function Navigation() {
-  const { isMobileView } = useNav();
+  const isMobileView = useNav();
 
   return (
     <header>
       <Navbar expand='sm'>
-        <Container>
-          <Navbar.Brand href='#'>COSMOS DEV</Navbar.Brand>
-          <Navbar.Toggle aria-controls='mobileNavbar' />
-          <TopMenu isMobileView={isMobileView} />
-          <SideMenu isMobileView={isMobileView} />
+        <Container fluid='sm' className='py-3'>
+          <Navbar.Brand className={styles.brand}>
+            <Link to='/'>
+              <HexagonHalf className='brand' /> COSMOS DEV
+            </Link>
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls='mobileNavbar'
+            className={styles.toggle}
+          />
+          {isMobileView ? <SideMenu /> : <TopMenu />}
         </Container>
       </Navbar>
     </header>

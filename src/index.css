@@ -9,37 +9,7 @@
   --font-color--white: #fff;
   --font-color--grey: #4a616c;
   --bg-color: #0b0e17;
-  /* --clr-light: #ededed;
-  --clr-dark: #333;
-  --clr-accent: #EFF;
-  --ff-heading: 'Roboto', sans-serif;
-  --ff-body: 'Merriweather', serif;
-  --fw-heading: 700;
-  --fw-body: 300;
-  --fs-h1: 5rem;
-  --fs-h2: 3.25rem;
-  --fs-h3: 2.75rem;
-  --fs-h4: 1.75rem;
-  --fs-body: 1.125rem;
-  --line-height: 1.55;
-  --font-color: var(--clr-light);
-  --navbar-bg-color: var(--clr-dark);
-  --navbar-logo-color: var(--clr-accent);
-  --navbar-border: thin var(--clr-accent) solid;
-  --navbar-font-size: .8rem;
-  --header-color: var(--clr-accent);
-  --header-shadow: 2px 3px 4px rgba(200,200,0,.25);
-  --pullquote-border: 5px solid var(--clr-light);
-  --link-fg: var(--clr-dark);
-  --link-bg: var(--clr-light);
-  --link-fg-hover: var(--clr-dark);
-  --link-bg-hover: var(--clr-accent);
-  --transition: 250ms ease-out;
-  --shadow: 2px 5px 20px rgba(0, 0, 0, .2);
-  --gradient: linear-gradient(60deg, red, green, blue, yellow);
-  --button-small: .75rem;
-  --button-default: 1rem;
-  --button-large: 1.5rem; */
+  --main-color: #aa26e9;
 }
 
 html {
@@ -57,6 +27,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  height: 85vh;
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }

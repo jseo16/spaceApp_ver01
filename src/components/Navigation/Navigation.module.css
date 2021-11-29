@@ -1,27 +1,21 @@
-/* .navbar {
-  padding: 2rem 1rem;
-} */
-header {
-  position: relative;
-  z-index: 1000;
-}
-
-li {
-  list-style: none;
-}
-
 a {
-  color: var(--font-color--white);
   text-decoration: none;
-  margin-left: 5rem;
 }
 
-/* header * {
+.brand {
+  font-size: 2rem;
+  font-weight: var(--fw-bold);
 }
 
-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-} */
+.brand svg {
+  vertical-align: text-bottom;
+  font-size: 2.5rem;
+}
+
+.brand a {
+  color: var(--main-color);
+}
+
+.toggle {
+  border: none;
+}

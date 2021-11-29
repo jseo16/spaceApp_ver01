@@ -15,9 +15,7 @@ const useNav = () => {
     return () => window.removeEventListener('resize', getScreenSize);
   }, []);
 
-  return {
-    isMobileView,
-  };
+  return isMobileView;
 };
 
 export default useNav;

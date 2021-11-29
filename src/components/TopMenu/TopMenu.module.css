@@ -1,0 +1,8 @@
+.nav {
+  margin-left: auto;
+}
+
+.nav a {
+  margin-left: 5rem;
+  color: var(--font-color--white);
+}
