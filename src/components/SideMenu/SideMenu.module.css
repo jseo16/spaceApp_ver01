@@ -2,4 +2,11 @@
   padding: 2rem;
   color: var(--font-color--dark);
   font-weight: var(--fw-bold);
+  text-transform: capitalize;
+}
+
+.nav a:hover,
+.nav .active {
+  color: var(--main-color);
+  transition: all 0.3s;
 }

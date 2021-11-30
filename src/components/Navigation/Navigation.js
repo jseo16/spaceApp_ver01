@@ -2,25 +2,19 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import useNav from '../../hooks/useNav';
-
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import styles from './Navigation.module.css';
-import { HexagonHalf } from 'react-bootstrap-icons';
-
 import SideMenu from '../SideMenu/SideMenu';
 import TopMenu from '../TopMenu/TopMenu';
 
-function Navigation() {
-  const isMobileView = useNav();
-  const [show, setShow] = useState(true);
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import { HexagonHalf } from 'react-bootstrap-icons';
+import styles from './Navigation.module.css';
 
+function Navigation({ menu }) {
+  const isMobileView = useNav();
+  const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  const navClickHandler = () => {
-    // setIsCollapse(!isCollapse);
-  };
 
   return (
     <header>
@@ -36,10 +30,16 @@ function Navigation() {
             className={styles.toggle}
             onClick={handleShow}
           />
+
           {isMobileView ? (
-            <SideMenu show={show} handleClose={handleClose} />
+            <SideMenu
+              show={show}
+              menu={menu}
+              handleClose={handleClose}
+              className={styles.sideNav}
+            />
           ) : (
-            <TopMenu />
+            <TopMenu menu={menu} />
           )}
         </Container>
       </Navbar>

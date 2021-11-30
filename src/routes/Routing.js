@@ -6,14 +6,15 @@ import {
   Route,
 } from 'react-router-dom';
 import Navigation from '../components/Navigation/Navigation';
-import Astronauts from '../screens/Astronauts/Astronauts';
-
 import Home from '../screens/Home/Home';
+import Astronauts from '../screens/Astronauts/Astronauts';
 import Spacecraft from '../screens/Spacecraft/Spacecraft';
+
 function Routing() {
+  const MENU_ITEMS = ['spacecraft', 'astronauts'];
   return (
     <Router>
-      <Navigation />
+      <Navigation menu={MENU_ITEMS} />
       <Routes>
         {/* <Switch> */}
         <Route exact path='/' element={<Home />} />
