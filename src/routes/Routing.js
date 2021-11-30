@@ -11,7 +11,7 @@ import Astronauts from '../screens/Astronauts/Astronauts';
 import Spacecraft from '../screens/Spacecraft/Spacecraft';
 
 function Routing() {
-  const MENU_ITEMS = ['spacecraft', 'astronauts'];
+  const MENU_ITEMS = ['home', 'spacecraft', 'astronauts'];
   return (
     <Router>
       <Navigation menu={MENU_ITEMS} />

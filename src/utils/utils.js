@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom';
 
 export const generateMenu = (menu, styles, handler) => {
   return menu.map((name, index) => {
+    let menuName = name;
+    if (name === 'home') name = '/';
     return (
       <NavLink
         key={index}
@@ -9,7 +11,7 @@ export const generateMenu = (menu, styles, handler) => {
         className={({ isActive }) => (isActive ? styles.active : '')}
         onClick={handler && handler}
       >
-        {name}
+        {menuName}
       </NavLink>
     );
   });
